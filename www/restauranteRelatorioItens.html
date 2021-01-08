@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bluefood - Restaurante Relatórios de Itens</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="">
+                   <img src="images/bf_logotipoSistema.png">
+                </a>
+            </div>
+            <div>
+                Olá, Nome do usuário!
+                <br>
+                <img src="images/bf_iconeCarrinho.png">
+            </div>
+        </header>
+        <br><br>
+        
+        <div>
+            <h1>Relatório de Itens</h1>
+            <fieldset>
+                <legend>Filtros</legend>
+                <form method="post" action="">
+                    <label for="item">Item: </label><br>
+                    <input name="item" id="item" type="text"><br>
+                    <label for="inicio">Início: </label><br>
+                    <input name="inicio" id="inicio" type="date"><br>
+                    <label for="fim">Fim: </label><br>
+                    <input name="fim" id="fim" type="date"><br>
+                    <input type="button" value="Buscar">
+                </form>
+            </fieldset>
+        </div><br><br>
+        
+        <div>
+            <form method="post" action="">
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                        <th>Faturamento</th>
+                    </tr>
+                    <tr>
+                        <td>Hamburguer</td>
+                        <td>25</td>
+                        <td>R$355,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza</td>
+                        <td>134</td>
+                        <td>R$1.256,00</td>
+                    </tr>
+                    <tr>
+                        <td>Salada</td>
+                        <td>12</td>
+                        <td>R$321,00</td>
+                    </tr>
+                    <tr>
+                        <td>Refrigerante</td>
+                        <td>155</td>
+                        <td>R$452,20</td>
+                    </tr>
+                </table>
+            </form>
+        </div><br>
+        
+        <input type="button" value="Voltar">
+        
+    </body>
+</html>
