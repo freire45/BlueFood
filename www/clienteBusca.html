@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Bluefood</title>
+        <title>Bluefood - Busca do Cliente</title>
         <link rel="stylesheet" type="text/css" href="css/bf_estiloSistema.css">
     </head>
     <body>
@@ -24,41 +24,84 @@
         <br><br>
         
         <div>
+            <h1>É hora de rangar!</h1>
+            <form method="post" action="">
+                <fieldset id="fieldsetFiltros">
+                    <input type="text" name="busca" placeholder="Buscar por..." >
+                    <input type="button" value="Procurar">
+                </fieldset>
+            </form>
+        </div>
+        
+        <div id="divCategoriasComidaGeral">
+            <div id="divCategoriasComidaOpcao">
+                <a href="">
+                    <img src="images/sys_categoriaChurrasco.png" id="imgCategoriaComida"><br>
+                    <span>Churrasco</span>
+                </a>
+            </div>
+             <div id="divCategoriasComidaOpcao">
+                <a href="">
+                    <img src="images/sys_categoriaHamburguer.png" id="imgCategoriaComida"><br>
+                    <span>Hamburguer</span>
+                </a>
+            </div>
+             <div id="divCategoriasComidaOpcao">
+                <a href="">
+                    <img src="images/sys_categoriaPizza.png" id="imgCategoriaComida"><br>
+                    <span>Pizza</span>
+                </a>
+            </div>
+             <div id="divCategoriasComidaOpcao">
+                <a href="">
+                    <img src="images/sys_categoriaSalada.png" id="imgCategoriaComida"><br>
+                    <span>Salada</span>
+                </a>
+            </div>
+             <div id="divCategoriasComidaOpcao">
+                <a href="">
+                    <img src="images/sys_categoriaSobremesa.png" id="imgCategoriaComida"><br>
+                    <span>Sobremesa</span>
+                </a>
+            </div>
+        </div>
+        
+        <div>
             <h1>Resultados</h1>
             <fieldset>
                 <legend>Filtros</legend>
                 <input type="button" value="Entrega grátis"><br>
-                <input type="button" value="Maior preço"> <input type="button" value="Menor preço"><br>
-                <input type="button" value="Maior taxa"> <input type="button" value="Menor taxa"><br>
-                <input type="button" value="Maior tempo"> <input type="button" value="Menor tempo"><br>
+                <input type="button" value="Maior preço" id="inputSelecionado"> <input type="button" value="Menor preço"><br>
+                <input type="button" value="Maior taxa" > <input type="button" value="Menor taxa"><br>
+                <input type="button" value="Maior tempo" > <input type="button" value="Menor tempo"><br>
             </fieldset>
         </div>
         
         <div>
-            <div>
+            <div id="divRestauranteOpcao">
                 <a href="">
-                    <img src="images/sys_restauranteBubgerKirg.png"><br>
-                    <span>Nome do restaurante</span><br>
+                    <img src="images/sys_restauranteBubgerKirg.png" id="imgRestauranteOpcao"><br>
+                    <span id="restauranteOpcaoTitulo">Nome do restaurante</span><br>
                     <span>Categoria de comida</span><br>
                     <span>Tempo Médio de entrega: 40m</span><br>
                     <span>Taxa de Entrega: R$ 15,00</span>
                 </a>
             </div><br><br>    
         
-            <div>
+            <div id="divRestauranteOpcao">
                 <a href="">
-                    <img src="images/sys_restauranteMcNaldos.png"><br>
-                    <span>Nome do restaurante</span><br>
+                    <img src="images/sys_restauranteMcNaldos.png" id="imgRestauranteOpcao"><br>
+                    <span id="restauranteOpcaoTitulo">Nome do restaurante</span><br>
                     <span>Categoria de comida</span><br>
                     <span>Tempo Médio de entrega: 40m</span><br>
                     <span>Taxa de Entrega: R$ 15,00</span>
                 </a>
             </div><br><br> 
         
-            <div>
+            <div id="divRestauranteOpcao">
                 <a href="">
-                    <img src="images/sys_restauranteSbubby.png"><br>
-                    <span>Nome do restaurante</span><br>
+                    <img src="images/sys_restauranteSbubby.png" id="imgRestauranteOpcao"><br>
+                    <span id="restauranteOpcaoTitulo">Nome do restaurante</span><br>
                     <span>Categoria de comida</span><br>
                     <span>Tempo Médio de entrega: 40m</span><br>
                     <span>Taxa de Entrega: R$ 15,00</span>
