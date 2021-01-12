@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bluefood - Relatório Pedidos Restaurante</title>
+        <link rel="stylesheet" type="text/css" href="css/bf_estiloSistema.css">
+    </head>
+    <body>
+        <header>
+            <div id="divLogotipoSistema">
+                <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+                <a href="">
+                   <img id="imgLogotipoSistema" src="images/bf_logotipoSistema.png">
+                </a>
+            </div>
+            
+            <div id="divUsuarioLogado">
+                Olá, Nome do usuário!
+                <br>
+            </div>
+        </header>
+        <br><br>
+        
+        <div>
+            <h1>Relatório de Pedidos</h1>
+            <fieldset>
+                <legend>Filtros</legend>
+                <form method="post" action="">
+                    <label for="numero">Número: </label><br>
+                    <input name="numero" id="numero" type="text"><br>
+                    <label for="inicio">Início: </label><br>
+                    <input name="inicio" id="inicio" type="date"><br>
+                    <label for="fim">Fim: </label><br>
+                    <input name="fim" id="fim" type="date"><br>
+                    <input type="button" value="Buscar">
+                </form>
+            </fieldset>
+        </div><br><br>
+        
+        <div>
+            <form method="post" action="">
+                <table>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="#35334"></td>
+                        <td>Samuel</td>
+                        <td>Rua das Flores, 75</td>
+                        <td>R$ 65,00</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="#3452"></td>
+                        <td>Henrique</td>
+                        <td>Avenida dos Estados, 51</td>
+                        <td>R$ 95,00</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="#6543"></td>
+                        <td>Pedro</td>
+                        <td>Rua Marambá, 775</td>
+                        <td>R$ 32,00</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="#35334"></td>
+                        <td>Ivo</td>
+                        <td>Rua XV de Novembro, 11</td>
+                        <td>R$65,00</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="#3452"></td>
+                        <td>Bruno</td>
+                        <td>Avenida Atlântica, 889</td>
+                        <td>R$  95,00</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="#6543"></td>
+                        <td>Evandro</td>
+                        <td>Rua José Antonio, 5655</td>
+                        <td>R$ 32,00</td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div><br>
+        
+        <input type="button" value="Voltar">
+        
+    </body>
+</html>
